@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet ../bin/landpage.css?>
+<?import javafx.scene.layout.HBox?>
+
+<VBox fx:id="mainVbox" prefWidth="575.0" stylesheets="landpage.css" xmlns:fx="http://javafx.com/fxml" fx:controller="Landpage">
+  <children>
+    <HBox fx:id="menuBar" alignment="CENTER" minHeight="41.0" prefHeight="49.0" prefWidth="950.0" VBox.vgrow="NEVER">
+      <children>
+      	<Button id="btnTweet" mnemonicParsing="false" text="Tweet" >
+        	<HBox.margin>
+            	<Insets right="10.0" fx:id="x1" />
+          	</HBox.margin>
+        </Button>
+        <Button id="btnHome" mnemonicParsing="false" text="Home" HBox.margin="$x1" />
+        <Button id="btnMessage" mnemonicParsing="false" text="Message" HBox.margin="$x1">
+        	<HBox.margin>
+            	<Insets right="10.0" fx:id="x1" />
+          	</HBox.margin>    
+        </Button>
+        <Button id="btnMe" mnemonicParsing="false" text="Me" disable="true" HBox.margin="$x1"/>
+        
+        <HBox alignment="TOP_RIGHT" prefHeight="37.0" prefWidth="63.0">
+          <children>
+          	
+            <Button fx:id="btnReduce" mnemonicParsing="false" text="_" />
+            <Button id="btnQuit" mnemonicParsing="false"  text="X" />
+          </children>
+        </HBox>
+      </children>
+    </HBox>
+    <HBox >
+    	<TextField id="searchField" maxHeight="1.7976931348623157E308" promptText="Find ..." HBox.hgrow="ALWAYS" />
+    	<Button id="btnSearch" mnemonicParsing="false" />
+    </HBox>
+    
+    <HBox fx:id="contentPane" prefHeight="145.0" prefWidth="950.0" VBox.vgrow="ALWAYS">
+     
+    </HBox>
+    <HBox fx:id="footer" alignment="CENTER" VBox.vgrow="NEVER">
+      <children>
+        <Text scaleX="2.4553087791729737" scaleY="1.1904062197496446" strokeType="OUTSIDE" strokeWidth="0.0" text="Footer" />
+        <Button fx:id="btnRefold" mnemonicParsing="false" text="^" />
+      </children>
+    </HBox>
+  </children>
+</VBox>

@@ -1,0 +1,68 @@
+.root{
+	-fx-background-color: rgb(142,193,218);   /* Couleur de twitter */
+}
+
+
+#mainVbox{
+	-fx-padding: 20px;
+	-fx-effect: dropshadow(two-pass-box , black, 20, 0.0 , 0, 0); 
+	
+}
+
+#menuBar{
+	-fx-padding: 10px;	
+	-fx-background-color:linear-gradient(#3e3e3e,#262626);
+	
+}
+#menuBar .button{
+	
+	-fx-max-height: 20px;
+	-fx-font-family: "Verdana";
+	-fx-font-weight: bold;
+	
+}
+#menuBar .button:hover{
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
+
+#btnHome{	
+	-fx-graphic: url("res/img/btnHome_25.png");
+	
+}
+/* 
+#btnConnecter{	
+	-fx-graphic: url("res/img/btnConnecter_25.png");
+}
+#btnDecouvrir{	
+	-fx-graphic: url("res/img/btnDecouvrir_25.png");
+}
+#btnMoi{	
+	-fx-graphic: url("res/img/btnMoi_25.png");
+}
+*/
+#btnTweet{
+	-fx-graphic: url("res/img/btnTweet_25.png");
+}
+
+#searchField{
+	
+	/*Is defined in FXML because CSS seem to have no effect on it */
+}
+
+#btnSearch{	
+	-fx-graphic: url("res/img/btnRecherche.png");
+}
+
+#footer{
+	-fx-padding: 10px;
+	-fx-background-color:linear-gradient(#262626,#3e3e3e);
+}
+
+
+/* --------- */
+
+#contentPane{
+	-fx-background-color: lightblue  ;
+	
+}
+

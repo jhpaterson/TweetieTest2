@@ -1,0 +1,81 @@
+/*
+	CSS for WebView
+*/
+body{
+	background-color: rgb(142,193,218);
+    text-decoration: none !important;
+}
+
+/*Text which is displayed before getHomeTimeline*/
+#promptStartText{
+	font-size: 150%;
+	font-family: "comic sans ms", "Verdana";
+	margin-top : 5%;
+	text-align: center;
+}
+
+/*General*/
+.tweetBloc:first-child{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.tweetBloc{
+	background-color: rgba(255,255,255,0.75);
+	width: 100%;
+	visibility: hidden;	/*By default*/
+}
+
+.tweetBloc:last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+/*For a tweet*/
+
+.name{
+	font-size: 105%;
+	font-weight: bold;
+	
+	color: black;
+}
+
+.screenName a{
+	
+	font-size: 90%;
+	color: gray;
+	
+}
+
+.message{
+	padding-left: 10px;
+	margin-top:5px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+.respondBar input{
+	width:100%;
+}
+
+.time{
+	font-size: 90%;
+	color: gray;
+	text-align: right;
+}
+
+.userPicture{
+	border-radius: 10px;
+	vertical-align: middle;
+	box-shadow: 1px 1px 12px #555;
+}
+
+.options{
+	opacity:0.01;
+}
+
+.options :hover{
+	color:#66b5d2;
+	text-decoration:underline;
+	cursor:pointer;
+}

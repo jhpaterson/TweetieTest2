@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet send_tweet.css?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+
+<VBox fx:id="mainVbox" minWidth="100.0" minHeight="200" stylesheets="res/css/send_tweet.css" xmlns:fx="http://javafx.com/fxml" fx:controller="Landpage">
+  <children>
+  	<HBox fx:id="menuBar" minHeight="41.0" prefHeight="49.0">
+  		<children>
+  			<Text fx:id="charRemaining"></Text>
+  		</children>
+  	</HBox>
+    <HBox fx:id="text_to_send" alignment="CENTER" minHeight="200.0" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="NEVER">
+      <children>
+      		<TextArea id="tweet" prefColumnCount="40" prefRowCount="50">
+      			<HBox.margin>
+            		<Insets bottom="5.0" fx:id="x1" />
+          		</HBox.margin>
+      		</TextArea>
+      </children>
+    </HBox>
+
+    <HBox fx:id="footer" alignment="CENTER" VBox.vgrow="NEVER">
+    	<children>
+    		<Button id="btnSend" mnemonicParsing="false"  text="Tweeter">
+    		   <HBox.margin>
+            		<Insets right="10.0" fx:id="x1" />
+          		</HBox.margin>
+    		</Button>
+    		
+    		<Button id="btnCancel" mnemonicParsing="false"  text="Cancel">
+    			<HBox.margin>
+            		<Insets right="10.0" fx:id="x1" />
+          		</HBox.margin>
+    		</Button>
+    	</children>
+    	<HBox.margin>
+            		<Insets top="10.0" fx:id="x1" />
+        </HBox.margin>
+    </HBox>
+  </children>
+</VBox>
