@@ -149,7 +149,7 @@ public final class TwitterAPI {
 //			//throw new Exception("Need to be authenticated");
 //		}
 
-		String url = Res.domain+Res.home_timeline_prefix;
+		String url = Res.domain+Res.home_timeline_prefix+"?include_entities=true";
 		
 		OAuthRequest request = new OAuthRequest(Verb.GET, url);	// we create a request
 		
